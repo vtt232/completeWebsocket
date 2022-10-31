@@ -48,8 +48,8 @@ public class StudentController {
         boolean checkAdmin = false;
         
         Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>) auth.getAuthorities();
+        System.out.println(authorities.size());
         for (SimpleGrantedAuthority role : authorities) {
-
             if(role.getAuthority().equals("ROLE_ADMIN")){
                 checkAdmin=true;
             }

@@ -62,7 +62,8 @@ public class AuthController {
     }
 
     @PostMapping(path="/signup", produces = "application/json", consumes = "application/json")
-    public ResponseEntity<AuthResponseDto> registerUser(@RequestBody SignUpDto signUpDto){
+    public ResponseEntity<AuthResponseDto> registerUser(@RequestBody SignUpDto signUpDto) {
+        System.out.println(signUpDto.getUsername());
         if(signUpDto.getRole().size()==0){
             ArrayList<String> defaultRole =  new ArrayList<String>();
             defaultRole.add("ROLE_USER");
