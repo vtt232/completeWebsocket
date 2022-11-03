@@ -22,8 +22,10 @@ public class Role {
     private int id;
     @Column
     private String name;
+
     public String getName() {
-        return null;
+        return name;
     }
+    
 
 }

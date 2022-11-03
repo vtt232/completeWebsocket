@@ -5,6 +5,10 @@ public class Transfer {
     private int number;
     private String receiver;
 
+    public Transfer() {
+    }
+
+
     public Transfer(int number, String receiver) {
         this.number = number;
         this.receiver = receiver;
@@ -24,6 +28,16 @@ public class Transfer {
     }
     public void setReceiver(String receiver) {
         this.receiver = receiver;
+    }
+
+
+    public int getNumber() {
+        return number;
+    }
+
+
+    public void setNumber(int number) {
+        this.number = number;
     }
     
 }
